@@ -1,10 +1,10 @@
 import _ from 'lodash';
 import './style.css';
 // import component from './modules/test'
-import omgwtf from './test.js';
+import wtf from './test.js';
 
  function component() {
-   const element = document.createElement('div');
+   const element = document.querySelector('#content');
 
    // Lodash, now imported by this script
    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
@@ -15,3 +15,4 @@ import omgwtf from './test.js';
 
 
  document.body.appendChild(component());
+ document.body.append(wtf());

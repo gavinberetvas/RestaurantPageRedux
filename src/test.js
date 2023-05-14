@@ -1,7 +1,10 @@
 
 function wtf() {
-    alert("wtAf");
+    console.log("wtAf");
+    const testdiv = document.createElement('div');
+    testdiv.innerHTML = "goodbye webpack";
+    return testdiv
     
 }
 
-export const omgwtf = wtf();
+export default wtf;
