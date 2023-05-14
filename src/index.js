@@ -1,18 +1,10 @@
+/* eslint-disable no-unused-vars */
 import _ from 'lodash';
 import './style.css';
-// import component from './modules/test'
-import wtf from './test.js';
+import buttonStandby from './modules/init';
+import menu from "./modules/menu";
+import home from "./modules/home";
+import contact from "./modules/contact";
 
- function component() {
-   const element = document.querySelector('#content');
-
-   // Lodash, now imported by this script
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-   return element;
- }
-
-
- document.body.appendChild(component());
- document.body.append(wtf());
+buttonStandby();
+home();
